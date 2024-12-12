@@ -1,0 +1,15 @@
+/* Agrega un color de fondo suave al formulario */
+.container {
+  background-color: #f0f4f8;
+}
+
+/* Personaliza la sombra y bordes */
+input, textarea, button {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover en el botón */
+button:hover {
+  background-color: #1D4ED8;
+}
