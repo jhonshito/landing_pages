@@ -1,8 +1,19 @@
 import React from 'react'
 import { FaStar, FaShoppingCart } from 'react-icons/fa';
-import shirtsData from "../Data/DataShirts";
+import Swal from 'sweetalert2';
 
 const Shirts = ({ shirts }) => {
+
+    const handleDetailsClick = (shirtName, buttonType) => {
+        // Mostrar SweetAlert con los detalles de la camiseta y el tipo de botón presionado (Detalles o Carrito)
+        Swal.fire({
+          title: `Simulación de detalles de ${shirtName}`,
+          text: `Has hecho clic en el botón de ${buttonType} para la camiseta: ${shirtName}. Aquí puedes ver la simulación de los detalles.`,
+          icon: 'info',
+          confirmButtonText: 'Cerrar',
+        });
+    };
+
   return (
     <section className='mt-5'>
         <h3 className="text-xl font-semibold text-center mb-6">Productos Destacados</h3>
@@ -42,11 +53,16 @@ const Shirts = ({ shirts }) => {
                 <div className="flex items-center justify-between">
                 <a
                     href="#"
+                    onClick={(e) => {
+                        e.preventDefault(); // Evita el comportamiento por defecto del enlace
+                        handleDetailsClick(shirt.nombre, 'Detalles'); // Llama la función para mostrar el SweetAlert con el botón "Detalles"
+                    }}
                     className="inline-flex items-center px-3 py-2 text-xs font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
                     Ver detalles
                 </a>
                 <button
+                    onClick={() => handleDetailsClick(shirt.nombre, 'Carrito de compra')}
                     className="inline-flex items-center p-2 text-sm font-medium text-white bg-green-600 rounded-full hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-700"
                 >
                     <FaShoppingCart className="w-5 h-5" />

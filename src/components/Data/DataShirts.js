@@ -3,7 +3,6 @@ import Shirt02 from "../../assets/image/shirt-02.png";
 import Shirt03 from "../../assets/image/shirt-03.png";
 import Shirt04 from "../../assets/image/shirt-04.png";
 import Shirt05 from "../../assets/image/shirt-05.png";
-import Shirt06 from "../../assets/image/shirt-06.png";
 
 const shirtsData = [
     {
@@ -13,8 +12,8 @@ const shirtsData = [
       "descuento": "15%"
     },
     {
-      "nombre": "Camiseta Manga Corta",
-      "descripcion": "Camiseta cómoda de manga corta, perfecta para el verano. Fabricada con materiales ligeros.",
+      "nombre": "Camiseta Básica",
+      "descripcion": "Camiseta básica de algodón, disponible en colores neutros y fácil de combinar.",
       "imagen": Shirt02,
       "descuento": "20%"
     },
@@ -31,8 +30,8 @@ const shirtsData = [
       "descuento": "25%"
     },
     {
-      "nombre": "Camiseta Básica",
-      "descripcion": "Camiseta básica de algodón, disponible en colores neutros y fácil de combinar.",
+      "nombre": "Camiseta manga larga",
+      "descripcion": "Camiseta cómoda de manga larga, perfecta para el verano. Fabricada con materiales ligeros.",
       "imagen": Shirt05,
       "descuento": "30%"
     }

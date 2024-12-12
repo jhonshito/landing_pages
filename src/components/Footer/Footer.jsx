@@ -44,27 +44,27 @@ const Footer = () => {
           <div>
             <h3 className="font-medium text-lg mb-2">Síguenos</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:scale-110 transition-transform">
+                <a href="https://www.facebook.com/QuestJeans/" target='_blank' className="hover:scale-110 transition-transform">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                        alt="Facebook"
+                        className="w-6 h-6"
+                    />
+                </a>
+                <a href="https://www.instagram.com/questoficial_/#" target='_blank' className="hover:scale-110 transition-transform">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                        alt="Instagram"
+                        className="w-6 h-6"
+                    />
+                </a>
+                <a href="https://www.youtube.com/channel/UCkR0QnbfslEb_7qxrHG8U4A" target='_blank' className="hover:scale-110 transition-transform">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                  alt="Facebook"
-                  className="w-6 h-6"
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png"
+                    alt="YouTube"
+                    className="w-6 h-6"
                 />
-              </a>
-              <a href="#" className="hover:scale-110 transition-transform">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                  alt="Instagram"
-                  className="w-6 h-6"
-                />
-              </a>
-              <a href="#" className="hover:scale-110 transition-transform">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg"
-                  alt="Twitter"
-                  className="w-6 h-6"
-                />
-              </a>
+                </a>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center text-sm">
-          <p>&copy; 2024 CyberQuest. Todos los derechos reservados.</p>
+            <p>&copy; 2024 CyberQuest. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>
